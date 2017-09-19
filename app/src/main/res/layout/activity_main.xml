@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ruiyi.appbar.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<widget.Appbar-->
+        <!--android:id="@+id/appbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--app:child_visible="LI|RT"-->
+        <!--app:right_text_color="@color/colorAccent"-->
+        <!--app:title_text="修 改"-->
+        <!--app:title_text_color="@color/colorAccent" /> -->
+
+    <!--
+    background 支持color 渐变  图片
+    child_visible 显示的子VIEW  LI=左边图片
+    -->
+
+    <widget.Appbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_appbar_main"
+        app:child_visible="LI|TT|RT"
+        app:left_image="@drawable/icon_plan_title_back"
+        app:right_text="确定"
+        app:right_text_color="@color/colorAccent"
+        app:title_text="修 改"
+        app:title_text_color="@color/colorAccent" />
+
+</android.support.constraint.ConstraintLayout>
